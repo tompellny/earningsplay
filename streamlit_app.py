@@ -152,7 +152,7 @@ def compute_recommendation(ticker):
 # ---------- STREAMLIT APP ----------
 st.title("📊 Earnings Play Checker")
 
-stock = st.text_input("Enter Stock Symbol:", "")
+stock = st.text_input("Enter Symbol:", "")
 
 if st.button("Submit"):
     with st.spinner("Fetching data..."):
