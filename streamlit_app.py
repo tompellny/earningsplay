@@ -84,7 +84,7 @@ def compute_recommendation(ticker):
         if len(stock.options) == 0:
             return f"Error: No options found for stock symbol '{ticker}'."
     except Exception:
-        return f"Error: Could not retrieve data for '{ticker}'."
+        return f"Error: Could not retrieve data for '{ticker}'. But why?"
     
     try:
         exp_dates = filter_dates(stock.options)
